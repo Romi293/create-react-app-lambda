@@ -10,7 +10,6 @@ let score = 0;
 let timeleft = 15;
 let questionCounter = 0;
 let availableQuesions = [];
-
 let questions = [];
 
 fetch(
