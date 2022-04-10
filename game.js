@@ -7,7 +7,7 @@ const progressBarFull = document.getElementById('progressBarFull');
 let currentQuestion = {};
 let acceptingAnswers = false;
 let score = 0;
-let timeleft = 15;
+let timeleft = 10;
 let questionCounter = 0;
 let availableQuesions = [];
 let questions = [];
@@ -126,7 +126,13 @@ choices.forEach((choice) => {
 incrementScore = (num) => {
     score += num;
     scoreText.innerText = score;
+    document.getElementById("score").innerHTML = score;
+    console.log(score);
+    
 };
+
+// document.getElementById("updatedScore").innerHTML = score;
+
 
 
 
