@@ -126,12 +126,10 @@ choices.forEach((choice) => {
 incrementScore = (num) => {
     score += num;
     scoreText.innerText = score;
-    document.getElementById("score").innerHTML = score;
-    console.log(score);
-    
+    return score;
 };
 
-// document.getElementById("updatedScore").innerHTML = score;
+document.getElementById("score").innerHTML = score;
 
 
 
